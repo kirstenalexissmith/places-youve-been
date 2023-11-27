@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Places You've Been</title>
+  <script src="scripts.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 class="journal">Travel Journal</h1>
+  <h4>Add a place you have traveled to:</h2>
+    <form id="new-place">
+      <label for="new-location">Name of location</label>
+      <input type="text" id="new-location" name="new-location">
+      <label for="new-landmarks">Landmarks</label>
+      <input type="text" id="new-landmarks" name="new-landmarks">
+      <label for="new-time-of-year">Time of year</label>
+      <input type="text" id="new-time-of-year" name="new-time-of-year">
+      <label for="new-notes">Notes</label>
+      <input type="text" id="new-notes" name="new-notes"></br>
+      <button type="submit">Add to travel journal</button>
+    </form>
+
+    <h4>Places you have traveled to:</h4>
+    <div id="traveled-to">
+    </div>
+
+    <div id="location-details" class="hidden">
+      <p>Location name:<span id="location"></span></p>
+      <p>Landmarks:<span id="landmarks"></span></p>
+      <p>Time of year:<span id="time-of-year"></span></p>
+      <p>notes:<span id="notes"></span></p>
+    </div>
+</body>
+
+</html>
